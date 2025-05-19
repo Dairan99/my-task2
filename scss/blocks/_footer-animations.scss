@@ -1,0 +1,185 @@
+.footer {
+    &__messenger-icon-whatsApp {
+        width: 36px;
+        height: 36px;
+
+        &:hover {
+            .footer__whatsApp-1 {
+                color: $color-whats-app;
+            }
+
+            .footer__whatsApp-2 {
+                color: $color-white;
+            }
+
+            .footer__whatsApp-3 {
+                color: $color-white;
+            }
+        }
+    }
+
+    &__whatsApp-1 {
+        color: $color-black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__whatsApp-2 {
+        color: $color-white;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__whatsApp-3 {
+        color: $color-white;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__messenger-icon-facebook {
+        width: 36px;
+        height: 36px;
+
+        &:hover {
+            .footer__facebook-1 {
+                color: $color-facebook;
+            }
+        }
+
+        &:hover {
+            .footer__facebook-2 {
+                color: $color-shades-of-whisper;
+            }
+        }
+    }
+
+    &__facebook-1 {
+        color: $color-black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__facebook-2 {
+        color: $color-white;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__messenger-icon-instagram {
+        width: 36px;
+        height: 36px;
+
+        &:hover {
+            .footer__instagram-1 {
+                color: $color-instagram;
+            }
+        }
+
+        &:hover {
+            .footer__instagram-2 {
+                color: $color-white;
+            }
+        }
+    }
+
+    &__instagram-1 {
+        color: $color-black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__instagram-2 {
+        color: $color-white;
+        transition: color 0.4s ease-in-out;
+    }
+
+     &__messenger-icon-vk {
+        width: 36px;
+        height: 36px;
+
+        &:hover {
+            .footer__vk-1 {
+                color: $color-vk;
+            }
+        }
+
+        &:hover {
+            .footer__vk-2 {
+                color: $color-white;
+            }
+        }
+    }
+
+    &__vk-1 {
+        color: $color-black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__vk-2 {
+        color: $color-white;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__messenger-icon-youtube {
+        width: 36px;
+        height: 36px;
+
+        &:hover {
+            .footer__youtube-1 {
+                color: $color-youtube-1;
+            }
+        }
+
+        &:hover {
+            .footer__youtube-2 {
+                color: $color-youtube-2;
+            }
+        }
+        
+        &:hover {
+            .footer__youtube-3 {
+                color: $color-youtube-3;
+            }
+        }
+
+        &:hover {
+            .footer__youtube-4 {
+                color: $color-white;
+            }
+        }
+    }
+
+    &__youtube-1 {
+        color: $color-black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__youtube-2 {
+        color: $color-black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__youtube-3 {
+        color: $color-black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__youtube-4 {
+        color: $color-white;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__messenger-icon-telegram {
+        width: 36px;
+        height: 36px;
+
+        &:hover {
+            .footer__telegram-1 {
+                color: $color-telegram;
+            }
+        }
+    }
+
+    &__telegram-1 {
+        color: $color-black;
+        transition: color 0.4s ease-in-out;
+    }
+
+    &__telegram-2 {
+        color: $color-white;
+    }
+}

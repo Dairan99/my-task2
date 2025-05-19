@@ -1,0 +1,43 @@
+@import '_footer-animations.scss';
+
+.footer {
+    display: block;
+
+    &__content {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    &__support-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__messenger-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__support-list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

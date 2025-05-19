@@ -1,0 +1,444 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 30px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-forest-green: #308E21;
+  --color-lucky:#A59400;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Play", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #141211;
+  background: linear-gradient(to bottom, #ffffff, rgba(187, 195, 194, 0.7)), linear-gradient(to bottom, rgba(141, 141, 141, 0.18), rgb(125, 125, 125));
+  background-blend-mode: overlay;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Play", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Play", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  color: #141211;
+  text-decoration: none;
+}
+
+.header {
+  display: block;
+}
+.header__content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  max-width: 100%;
+  height: 140px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 7px 2px 8px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #c3c08e, rgba(187, 195, 194, 0.7)), linear-gradient(to bottom, rgba(141, 141, 141, 0.18), rgba(157, 157, 157, 0.18));
+  cursor: pointer;
+}
+.header__logo-img {
+  max-width: 300px;
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header__logo-text {
+  font-size: 24px;
+}
+.header__logo-file {
+  display: none;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 120px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 7px 2px 8px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #c3c08e, rgba(187, 195, 194, 0.7)), linear-gradient(to bottom, rgba(141, 141, 141, 0.18), rgba(157, 157, 157, 0.18));
+  cursor: pointer;
+}
+.header__button {
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  max-width: 120px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: 7px 2px 8px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #c3c08e, rgba(187, 195, 194, 0.7)), linear-gradient(to bottom, rgba(141, 141, 141, 0.18), rgba(157, 157, 157, 0.18));
+}
+
+.footer__messenger-icon-whatsApp {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-whatsApp:hover .footer__whatsApp-1 {
+  color: #54CC61;
+}
+.footer__messenger-icon-whatsApp:hover .footer__whatsApp-2 {
+  color: #ffffff;
+}
+.footer__messenger-icon-whatsApp:hover .footer__whatsApp-3 {
+  color: #ffffff;
+}
+.footer__whatsApp-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__whatsApp-2 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__whatsApp-3 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-facebook {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-facebook:hover .footer__facebook-1 {
+  color: #005cb9;
+}
+.footer__messenger-icon-facebook:hover .footer__facebook-2 {
+  color: #EEEEEE;
+}
+.footer__facebook-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__facebook-2 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-instagram {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-instagram:hover .footer__instagram-1 {
+  color: #E4405F;
+}
+.footer__messenger-icon-instagram:hover .footer__instagram-2 {
+  color: #ffffff;
+}
+.footer__instagram-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__instagram-2 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-vk {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-vk:hover .footer__vk-1 {
+  color: #4d7198;
+}
+.footer__messenger-icon-vk:hover .footer__vk-2 {
+  color: #ffffff;
+}
+.footer__vk-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__vk-2 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-youtube {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-youtube:hover .footer__youtube-1 {
+  color: #D42428;
+}
+.footer__messenger-icon-youtube:hover .footer__youtube-2 {
+  color: #CC202D;
+}
+.footer__messenger-icon-youtube:hover .footer__youtube-3 {
+  color: #BA202E;
+}
+.footer__messenger-icon-youtube:hover .footer__youtube-4 {
+  color: #ffffff;
+}
+.footer__youtube-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__youtube-2 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__youtube-3 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__youtube-4 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-telegram {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-telegram:hover .footer__telegram-1 {
+  color: #039be5;
+}
+.footer__telegram-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__telegram-2 {
+  color: #ffffff;
+}
+
+.footer {
+  display: block;
+}
+.footer__content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+.footer__support-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__messenger-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+.footer__support-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__messenger-icon-whatsApp {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-whatsApp:hover .footer__whatsApp-1 {
+  color: #54CC61;
+}
+.footer__messenger-icon-whatsApp:hover .footer__whatsApp-2 {
+  color: #ffffff;
+}
+.footer__messenger-icon-whatsApp:hover .footer__whatsApp-3 {
+  color: #ffffff;
+}
+.footer__whatsApp-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__whatsApp-2 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__whatsApp-3 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-facebook {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-facebook:hover .footer__facebook-1 {
+  color: #005cb9;
+}
+.footer__messenger-icon-facebook:hover .footer__facebook-2 {
+  color: #EEEEEE;
+}
+.footer__facebook-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__facebook-2 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-instagram {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-instagram:hover .footer__instagram-1 {
+  color: #E4405F;
+}
+.footer__messenger-icon-instagram:hover .footer__instagram-2 {
+  color: #ffffff;
+}
+.footer__instagram-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__instagram-2 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-vk {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-vk:hover .footer__vk-1 {
+  color: #4d7198;
+}
+.footer__messenger-icon-vk:hover .footer__vk-2 {
+  color: #ffffff;
+}
+.footer__vk-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__vk-2 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-youtube {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-youtube:hover .footer__youtube-1 {
+  color: #D42428;
+}
+.footer__messenger-icon-youtube:hover .footer__youtube-2 {
+  color: #CC202D;
+}
+.footer__messenger-icon-youtube:hover .footer__youtube-3 {
+  color: #BA202E;
+}
+.footer__messenger-icon-youtube:hover .footer__youtube-4 {
+  color: #ffffff;
+}
+.footer__youtube-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__youtube-2 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__youtube-3 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__youtube-4 {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+.footer__messenger-icon-telegram {
+  width: 36px;
+  height: 36px;
+}
+.footer__messenger-icon-telegram:hover .footer__telegram-1 {
+  color: #039be5;
+}
+.footer__telegram-1 {
+  color: #000000;
+  transition: color 0.4s ease-in-out;
+}
+.footer__telegram-2 {
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
