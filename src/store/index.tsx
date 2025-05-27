@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "../store/slices"
-import todoReducer  from "../store/todoSlices"
+import counterReducer from "./slices"
+import todoReducer  from "./todoSlices"
 
 export type RootState = ReturnType<typeof store.getState>
 
